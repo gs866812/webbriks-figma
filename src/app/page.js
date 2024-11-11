@@ -1,5 +1,6 @@
 "use client";
 
+import Banner from "@/components/Banner";
 import aos from "aos";
 import React, { useEffect } from "react";
 
@@ -14,6 +15,9 @@ const Home = () => {
   }, []);
   return (
     <div>
+      <section>
+        <Banner/>
+      </section>
     </div>
   );
 };

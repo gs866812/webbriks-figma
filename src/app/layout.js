@@ -7,6 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import { NavigationbarWithDropdownMultilevelMenu } from "@/components/Navbar";
 import { ToastContainer } from "react-toastify";
+import FooterGlobal from "@/components/FooterGlobal";
 
 
 
@@ -33,7 +34,7 @@ export default function RootLayout({ children }) {
         <main className="z-0">{children}</main>
 
         <footer>
-          footer
+          <FooterGlobal/>
         </footer>
       </body>
     </html>
