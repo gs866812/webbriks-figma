@@ -247,7 +247,7 @@ export function NavigationbarWithDropdownMultilevelMenu() {
   }, []);
 
   return (
-    <div className="bg-[#FEF9EF] w-full">
+    <div className="bg-[#FEF9EF] lg:w-full w-[90%] mx-auto">
       <Navbar className="shadow-none lg:w-[90%] mx-auto rounded-none bg-[#FEF9EF] px-0 border-none">
         <div className="flex items-center justify-between">
           <Link href='/' className=''>

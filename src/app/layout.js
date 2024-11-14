@@ -25,15 +25,15 @@ export default function RootLayout({ children }) {
         <link rel="icon" type="image/png" href="https://iili.io/dj5tSSf.png" />
       </head>
 
-      <body>
+      <body className="bg-[#FFFBF4]">
         <ToastContainer position="bottom-right" />
-        <header className="lg:sticky lg:-top-2 z-50 shadow-md">
+        <header className="lg:sticky lg:-top-2 z-50 shadow-sm">
           <NavigationbarWithDropdownMultilevelMenu />
         </header>
 
         <main className="z-0">{children}</main>
 
-        <footer>
+        <footer className="">
           <FooterGlobal/>
         </footer>
       </body>
