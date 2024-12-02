@@ -3,11 +3,8 @@ import 'aos/dist/aos.css'; // Import the CSS
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import 'react-toastify/dist/ReactToastify.css';
+import RootLayout from "./MainApp";
 
-
-import { NavigationbarWithDropdownMultilevelMenu } from "@/components/Navbar";
-import { ToastContainer } from "react-toastify";
-import FooterGlobal from "@/components/FooterGlobal";
 
 
 
@@ -18,7 +15,7 @@ export const metadata = {
 };
 
 
-export default function RootLayout({ children }) {
+export default function MyFunc({ children }) {
   return (
     <html lang="en" data-theme="light">
       <head>
@@ -26,17 +23,11 @@ export default function RootLayout({ children }) {
       </head>
 
       <body className="bg-[#FFFBF4]">
-        <ToastContainer position="bottom-right" />
-        <header className="lg:sticky lg:-top-2 z-50 shadow-sm">
-          <NavigationbarWithDropdownMultilevelMenu />
-        </header>
-
-        <main className="z-0">{children}</main>
-
-        <footer className="">
-          <FooterGlobal/>
-        </footer>
+        <RootLayout>
+          {children}
+        </RootLayout>
       </body>
     </html>
+
   );
 }

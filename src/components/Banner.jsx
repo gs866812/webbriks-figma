@@ -3,9 +3,12 @@ import Link from 'next/link'
 import React from 'react'
 import { FaStar, FaWhatsapp } from 'react-icons/fa'
 import { FiArrowUpRight } from 'react-icons/fi'
+import { useSelector } from 'react-redux'
 
 
 export default function Banner() {
+
+
   return (
     <div className='w-full bg-[#FFFBF4] lg:bg-[url("https://iili.io/2uar8rJ.png")] bg-[length:100%_98%] bg-no-repeat bg-right-top relative'>
       <Image src='https://iili.io/2ubyQbR.png' width={80} height={21} alt='' className='absolute hidden md:block top-[15%] -left-3 h-auto w-auto' />
