@@ -2,13 +2,13 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const valueSlice = createSlice({
   name: 'myName',
-  initialState: { myName: 'Hello, Sarwar' }, // Initial value
+  initialState: { value: 'Hello, Sarwar' }, // Updated initial state
   reducers: {
-    setName: (state, action) => {
-      state.value = action.payload; // Update the value
+    setMyName: (state, action) => {
+      state.value = action.payload; // Now this correctly updates state.value
     },
   },
 });
 
-export const { setName } = valueSlice.actions;
+export const { setMyName } = valueSlice.actions;
 export default valueSlice.reducer;

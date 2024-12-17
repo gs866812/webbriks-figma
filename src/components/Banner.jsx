@@ -1,12 +1,14 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react'
 import { FaStar, FaWhatsapp } from 'react-icons/fa'
 import { FiArrowUpRight } from 'react-icons/fi'
-import { useSelector } from 'react-redux'
+
 
 
 export default function Banner() {
+
+
 
 
   return (
@@ -44,7 +46,7 @@ export default function Banner() {
               <p className='text-[#FFA726] flex items-center gap-1 mb-2 pt-1'>
                 <FaStar /> <FaStar /> <FaStar /> <FaStar /> <FaStar />
               </p>
-              <p className='text-[14px]'>(3k+) Customer reviews</p>
+              <p className='text-[14px]'>(3k+) Customer reviews </p>
             </div>
 
 

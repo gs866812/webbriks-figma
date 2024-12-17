@@ -1,12 +1,13 @@
 import { configureStore } from "@reduxjs/toolkit";
-import valueReducer from './slices/valueSlice';
+import gettingReducer from './slices/valueSlice';
 
 
 const store = configureStore({
   reducer: {
-    getting: valueReducer,
-    myName: "my_name",
-  }, 
+
+    getting: gettingReducer,
+
+  },
 });
 
 export default store;
